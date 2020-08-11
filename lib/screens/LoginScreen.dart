@@ -4,7 +4,20 @@ import 'package:flutter/material.dart';
 class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    final String title = "Login Screen";
     return Scaffold(
+      appBar: AppBar(
+        title: new Text(
+          title,
+          style: new TextStyle(color: Colors.white),
+        ),
+        leading: new IconButton(
+          icon: new Icon(Icons.arrow_back),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
+      ),
       body: Center(
         child: Container(
           padding: EdgeInsets.all(80.0),

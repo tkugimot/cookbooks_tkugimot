@@ -1,3 +1,4 @@
+import 'package:cookbooks_tkugimot/common/OriginalAppBar.dart';
 import 'package:cookbooks_tkugimot/screens/GridListScreen.dart';
 import 'package:cookbooks_tkugimot/screens/LoginScreen.dart';
 import 'package:flutter/cupertino.dart';
@@ -9,7 +10,10 @@ class HomeScreen extends StatelessWidget {
     final String title = "Home Screen";
     return Scaffold(
       appBar: AppBar(
-        title: Text(title),
+        title: new Text(
+          title,
+          style: new TextStyle(color: Colors.white),
+        ),
       ),
       body: ListView(
         children: <Widget>[
@@ -38,3 +42,4 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
+

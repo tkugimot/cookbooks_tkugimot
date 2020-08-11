@@ -4,10 +4,19 @@ import 'package:flutter/material.dart';
 class GridListScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final title = 'Grid List';
+    final title = 'Grid List Screen';
     return Scaffold(
         appBar: AppBar(
-          title: Text(title),
+          title: new Text(
+            title,
+            style: new TextStyle(color: Colors.white),
+          ),
+          leading: new IconButton(
+            icon: new Icon(Icons.arrow_back),
+            onPressed: () {
+              Navigator.pop(context);
+            },
+          ),
         ),
         body: GridView.count(
           // Create a grid with 2 columns. If you change the scrollDirection to
