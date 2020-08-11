@@ -1,4 +1,5 @@
 import 'package:cookbooks_tkugimot/common/OriginalAppBar.dart';
+import 'package:cookbooks_tkugimot/common/OriginalDrawer.dart';
 import 'package:cookbooks_tkugimot/screens/GridListScreen.dart';
 import 'package:cookbooks_tkugimot/screens/LoginScreen.dart';
 import 'package:flutter/cupertino.dart';
@@ -39,6 +40,9 @@ class HomeScreen extends StatelessWidget {
           ),
         ],
       ),
+      // drawer: top-left
+      // endDrawer: top-right
+      endDrawer: OriginalDrawer()
     );
   }
 }
