@@ -1,4 +1,5 @@
 import 'package:cookbooks_tkugimot/screens/BottomNavigationScreen.dart';
+import 'package:cookbooks_tkugimot/screens/FetchJsonScreen.dart';
 import 'package:cookbooks_tkugimot/screens/GridListScreen.dart';
 import 'package:cookbooks_tkugimot/screens/HomeScreen.dart';
 import 'package:cookbooks_tkugimot/screens/LoginScreen.dart';
@@ -36,6 +37,7 @@ class MyApp extends StatelessWidget {
                   Todo(index, "Todo $index", "A description of todo $index"))
           ),
           PassDataDetailScreen.routeName: (context) => PassDataDetailScreen(), // 'pass-data-detail'
+          'fetch-json': (context) => FetchJsonScreen(),
         },
       ),
     );
