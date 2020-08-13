@@ -1,3 +1,4 @@
+import 'package:cookbooks_tkugimot/screens/BottomNavigationScreen.dart';
 import 'package:cookbooks_tkugimot/screens/GridListScreen.dart';
 import 'package:cookbooks_tkugimot/screens/HomeScreen.dart';
 import 'package:cookbooks_tkugimot/screens/LoginScreen.dart';
@@ -25,6 +26,7 @@ class MyApp extends StatelessWidget {
           '/login': (context) => LoginScreen(),
           '/grid-list': (context) => GridListScreen(),
           '/tabs-top': (context) => TabsTopScreen(),
+          '/bottom-navigators': (context) => BottomNavigationScreen(),
         },
       ),
     );
