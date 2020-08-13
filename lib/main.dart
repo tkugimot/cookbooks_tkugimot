@@ -2,9 +2,13 @@ import 'package:cookbooks_tkugimot/screens/BottomNavigationScreen.dart';
 import 'package:cookbooks_tkugimot/screens/GridListScreen.dart';
 import 'package:cookbooks_tkugimot/screens/HomeScreen.dart';
 import 'package:cookbooks_tkugimot/screens/LoginScreen.dart';
+import 'package:cookbooks_tkugimot/screens/PassDataScreen.dart';
 import 'package:cookbooks_tkugimot/screens/TabsTopScreen.dart';
+import 'package:cookbooks_tkugimot/screens/passdata/PassDataDetailScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+
+import 'models/Todo.dart';
 
 void main() {
   runApp(MyApp());
@@ -27,6 +31,11 @@ class MyApp extends StatelessWidget {
           '/grid-list': (context) => GridListScreen(),
           '/tabs-top': (context) => TabsTopScreen(),
           '/bottom-navigators': (context) => BottomNavigationScreen(),
+          '/pass-data': (context) => PassDataScreen(
+              todoList: List<Todo>.generate(20, (index) =>
+                  Todo(index, "Todo $index", "A description of todo $index"))
+          ),
+          PassDataDetailScreen.routeName: (context) => PassDataDetailScreen(), // 'pass-data-detail'
         },
       ),
     );
